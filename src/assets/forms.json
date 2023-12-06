@@ -1,0 +1,186 @@
+{
+    "form": {
+        "name": "TG",
+        "pages": [
+            {
+                "name": "Basic Details",
+                "sequence": 0,
+                "configurations": {
+                    "conditions": []
+                },
+                "gs": [
+                    {
+                        "name": "fg-1",
+                        "sequence": 1,
+                        "configurations": {
+                            "conditions": []
+                        },
+                        "formFields": [
+                            {
+                                "name": "InputA",
+                                "sequence": 1,
+                                "configurations": {
+                                    "validations": {
+                                        "required": false
+                                    },
+                                    "conditions": [
+                                        {
+                                            "validation": "required",
+                                            "sequence": 2,
+                                            "rules": []
+                                        },
+                                        {
+                                            "validation": "required",
+                                            "sequence": 3,
+                                            "rules": []
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "InputB",
+                                "sequence": 2,
+                                "configurations": {
+                                    "validations": {
+                                        "required": true
+                                    },
+                                    "conditions": [
+                                        {
+                                            "validation": "required",
+                                            "rules": [
+                                                {
+                                                    "sequence": [
+                                                        0
+                                                    ],
+                                                    "rule": "greater",
+                                                    "value": 3
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "InputC",
+                                "sequence": 3,
+                                "configurations": {
+                                    "validations": {
+                                        "required": true
+                                    },
+                                    "conditions": [
+                                        {
+                                            "validation": "display",
+                                            "rules": [
+                                                {
+                                                    "sequence": [
+                                                        1
+                                                    ],
+                                                    "rule": "greater",
+                                                    "value": 3
+                                                },
+                                                {
+                                                    "sequence": [
+                                                        2
+                                                    ],
+                                                    "rule": "equal",
+                                                    "value": 9
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "fg-2",
+                        "sequence": 2,
+                        "configurations": {
+                            "conditions": [
+                                {
+                                    "type": "display",
+                                    "sequence": 1,
+                                    "rules": []
+                                },
+                                {
+                                    "type": "display",
+                                    "sequence": 2,
+                                    "rules": []
+                                },
+                                {
+                                    "type": "display",
+                                    "sequence": 3,
+                                    "rules": []
+                                }
+                            ]
+                        },
+                        "formFields": []
+                    },
+                    {
+                        "name": "fg-3",
+                        "sequence": 3,
+                        "configurations": {
+                            "conditions": []
+                        },
+                        "formFields": []
+                    }
+                ]
+            },
+            {
+                "name": "Only on TG2",
+                "sequence": 1,
+                "configurations": {
+                    "conditions": [
+                        {
+                            "type": "display",
+                            "sequence": 1,
+                            "rules": []
+                        }
+                    ]
+                },
+                "gs": []
+            },
+            {
+                "name": "Responsible Auths",
+                "sequence": 2,
+                "configurations": {
+                    "conditions": [
+                        {
+                            "type": "display",
+                            "sequence": 1,
+                            "rules": []
+                        },
+                        {
+                            "type": "display",
+                            "sequence": 2,
+                            "rules": []
+                        },
+                        {
+                            "type": "display",
+                            "sequence": 3,
+                            "rules": []
+                        }
+                    ]
+                },
+                "gs": [
+                    {
+                        "name": "fg-1",
+                        "sequence": 1,
+                        "configurations": {
+                            "conditions": []
+                        },
+                        "formFields": []
+                    },
+                    {
+                        "name": "fg-2",
+                        "sequence": 2,
+                        "configurations": {
+                            "conditions": []
+                        },
+                        "formFields": []
+                    }
+                ]
+            }
+        ]
+    }
+}
